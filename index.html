@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Kitchen | Blacksburg</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,24 +23,27 @@
 
     <main>
         <section class="hero">
-            <img src="hero-image.jpg" alt="Delicious Chinese food" />
-            <h1>Authentic Chinese Cuisine in the Heart of Blacksburg</h1>
-            <a href="menu.html" class="cta-button">Order Online</a>
+            <div class="hero-content">
+                <h1>Authentic Chinese Cuisine in the Heart of Blacksburg</h1>
+                <a href="menu.html" class="cta-button">Order Online</a>
+            </div>
         </section>
 
         <section class="specials">
             <h2>Featured Dishes</h2>
-            <div class="dish">
-                <img src="dish1.jpg" alt="Dish 1">
-                <h3>Kung Pao Chicken</h3>
-                <p>Spicy stir-fried chicken with peanuts and vegetables.</p>
-                <span>$12.99</span>
-            </div>
-            <div class="dish">
-                <img src="dish2.jpg" alt="Dish 2">
-                <h3>Mapo Tofu</h3>
-                <p>Spicy and flavorful tofu dish from Sichuan cuisine.</p>
-                <span>$10.99</span>
+            <div class="dish-grid">
+                <div class="dish">
+                    <img src="dish1.jpg" alt="Kung Pao Chicken">
+                    <h3>Kung Pao Chicken</h3>
+                    <p>Spicy stir-fried chicken with peanuts and vegetables.</p>
+                    <span>$12.99</span>
+                </div>
+                <div class="dish">
+                    <img src="dish2.jpg" alt="Mapo Tofu">
+                    <h3>Mapo Tofu</h3>
+                    <p>Spicy and flavorful tofu dish from Sichuan cuisine.</p>
+                    <span>$10.99</span>
+                </div>
             </div>
         </section>
 
@@ -50,15 +54,17 @@
     </main>
 
     <footer>
-        <div class="contact-info">
-            <p>Location: 1234 Main St, Blacksburg, VA</p>
-            <p>Hours: Mon-Sun: 11 AM - 10 PM</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: contact@chinesekitchen.com</p>
-        </div>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <p>Location: 1234 Main St, Blacksburg, VA</p>
+                <p>Hours: Mon-Sun: 11 AM - 10 PM</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: contact@chinesekitchen.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
         </div>
         <p>&copy; 2024 Chinese Kitchen</p>
     </footer>
