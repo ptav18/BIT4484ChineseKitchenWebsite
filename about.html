@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Chinese Kitchen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #c8102e;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 2.4em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #c8102e;
+        }
+
+        .about-section p {
+            margin-bottom: 40px;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .about-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .about-grid .about-item {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-item h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about-item p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .about-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background-color: #c8102e;
+            color: white;
+            padding: 15px 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ffcc00;
+            color: black;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 2em;
+        }
+
+        .social-media a:hover {
+            color: #ffcc00;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Chinese Kitchen</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About Chinese Kitchen</h1>
+            <p>Welcome to Chinese Kitchen, where authentic flavors meet modern dining experiences. Our restaurant in Blacksburg, VA, has been serving delicious Chinese cuisine to the community for years. We take pride in offering high-quality ingredients, traditional recipes, and a welcoming atmosphere for all our guests.</p>
+
+            <div class="about-grid">
+                <div class="about-item">
+                    <img src="restaurant.jpg" alt="Chinese Kitchen Interior">
+                    <h2>Our Story</h2>
+                    <p>Founded in [Year], Chinese Kitchen started as a small, family-owned restaurant. Over the years, we've grown into a local favorite, known for our diverse menu, cozy ambiance, and commitment to excellent service. We believe food brings people together, and we strive to create memorable experiences for everyone who dines with us.</p>
+                </div>
+
+                <div class="about-item">
+                    <img src="mission.jpg" alt="Fresh Ingredients">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is simple: to bring authentic Chinese flavors to our community while upholding the highest standards of quality and service. Whether you're looking for a quick bite or a sit-down meal with family, Chinese Kitchen is dedicated to making every dining experience special.</p>
+                </div>
+
+                <div class="about-item">
+                    <img src="team.jpg" alt="Our Team">
+                    <h2>Meet the Team</h2>
+                    <p>At Chinese Kitchen, our team is like family. From the chefs who craft every dish with care to our friendly servers, we are all passionate about delivering the best possible experience for our guests. We believe in working together to create a warm, inviting environment for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <p>At the heart of Chinese Kitchen, our core values guide everything we do:</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Authenticity</h3>
+                    <p>We honor traditional recipes and culinary techniques to bring you the most authentic flavors of China.</p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Quality</h3>
+                    <p>We source the freshest ingredients and prepare every dish with the utmost care and attention to detail.</p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Community</h3>
+                    <p>We value our role in the local community and are proud to serve delicious food in a welcoming environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Join Us!</h2>
+            <p>Come and visit Chinese Kitchen, where every meal is a celebration of flavors. Whether you're stopping by for a quick lunch or gathering with friends for dinner, we promise an unforgettable experience.</p>
+            <a href="menu.html"><button class="cta-button">Explore Our Menu</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <p>Location: 1409 N Main St No.002, Blacksburg, VA 24060</p>
+                <p>Hours: Mon-Sun: 10 AM - 2 AM</p>
+                <p>Phone: (540) 552-7110</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/chinesekitchenblacksburg/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/chinesekitchenblacksburg" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
