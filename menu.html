@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Chinese Kitchen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #c8102e;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 2.4em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Menu Section Styles */
+        .menu-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .menu-section h1 {
+            font-size: 3em;
+            color: #c8102e;
+            margin-bottom: 20px;
+        }
+
+        .menu-section p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .menu-category {
+            margin-bottom: 50px;
+        }
+
+        .menu-category h2 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: left;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5em;
+            color: #c8102e;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1.1em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .menu-item .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 2em;
+        }
+
+        .social-media a:hover {
+            color: #ffcc00;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Chinese Kitchen</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h1>Our Menu</h1>
+            <p>Explore our delicious variety of authentic Chinese dishes, prepared fresh daily.</p>
+
+            <!-- Appetizers -->
+            <div class="menu-category">
+                <h2>Appetizers</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3>Spring Rolls</h3>
+                        <p>Crispy rolls stuffed with fresh vegetables and served with sweet chili sauce.</p>
+                        <p class="price">$5.99</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Fried Dumplings</h3>
+                        <p>Pork and vegetable dumplings, pan-fried to perfection.</p>
+                        <p class="price">$7.49</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Crab Rangoon</h3>
+                        <p>Wonton wrappers filled with cream cheese and crab meat, fried golden brown.</p>
+                        <p class="price">$6.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Dishes -->
+            <div class="menu-category">
+                <h2>Main Dishes</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3>General Tso's Chicken</h3>
+                        <p>Spicy, tangy chicken served with steamed rice.</p>
+                        <p class="price">$12.99</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Beef and Broccoli</h3>
+                        <p>Tender beef stir-fried with fresh broccoli in a savory garlic sauce.</p>
+                        <p class="price">$11.99</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Szechuan Shrimp</h3>
+                        <p>Shrimp stir-fried with vegetables in a spicy Szechuan sauce.</p>
+                        <p class="price">$13.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category">
+                <h2>Beverages</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h3>Jasmine Green Tea</h3>
+                        <p>Refreshing iced green tea with a hint of jasmine.</p>
+                        <p class="price">$2.99</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Soda</h3>
+                        <p>Choice of Coca-Cola, Sprite, or Fanta.</p>
+                        <p class="price">$1.99</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Thai Iced Tea</h3>
+                        <p>Sweetened iced tea with a splash of milk.</p>
+                        <p class="price">$3.49</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <p>Location: 1409 N Main St No.002, Blacksburg, VA 24060</p>
+                <p>Hours: Mon-Sun: 10 AM - 2 AM</p>
+                <p>Phone: (540) 552-7110</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/chinesekitchenblacksburg/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/chinesekitchenblacksburg" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
