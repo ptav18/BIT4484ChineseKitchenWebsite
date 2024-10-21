@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Chinese Kitchen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Chinese Kitchen</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="generaltsos.jpg" alt="General Tsos">
+                <p>General Tsos Chicken</p>
+            </div>
+            <div class="gallery-item">
+                <img src="chickenlomein.jpg" alt="Chicken Lomein">
+                <p>Chicken Lomein</p>
+            </div>
+            <div class="gallery-item">
+                <img src="chickenfriedrice.jpg" alt="Chicken Fried Rice">
+                <p>Chicken Fried Rice</p>
+            </div>
+            <div class="gallery-item">
+                <img src="beef3.jpg" alt="Spring Rolls">
+                <p>Beef with Broccoli</p>
+            </div>
+            <div class="gallery-item">
+                <img src="wings.jpg" alt="Beef Chow Mein">
+                <p>Buffalo Wings</p>
+            </div>
+            <div class="gallery-item">
+                <img src="udonsoup.jpg" alt="Udon Soup">
+                <p>Udon Vegetable Soup</p>
+            </div>
+            <div class="gallery-item">
+                <img src="shrimp.jpg" alt="Shrimp Chowmein">
+                <p>Shrimp Chowmein</p>
+            </div>
+            <div class="gallery-item">
+                <img src="maifun.jpg" alt="Mai Fun">
+                <p>Mai Fun</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <p>Location: 1409 N Main St No.002, Blacksburg, VA 24060</p>
+                <p>Hours: Mon-Sun: 10 AM - 2 AM</p>
+                <p>Phone: (540) 552-7110</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/chinesekitchenblacksburg/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/chinesekitchenblacksburg" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 Chinese Kitchen</p>
+    </footer>
+</body>
+</html>

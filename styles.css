@@ -48,7 +48,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     height: 600px; /* Adjust the height as per your design */
-    background: url('hero-image.jpg') center/cover no-repeat; /* Use the image as background */
+    background: url('chinesekitchenlogo.jpg') center/cover no-repeat; /* Use the image as background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +64,14 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust opacity */
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for better text visibility */
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: rounded corners for the content box */
 }
 
 .hero h1 {
@@ -147,8 +149,17 @@ footer {
     padding: 20px;
 }
 
-.social-media img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+.social-media {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Size of icons */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.social-media a:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
